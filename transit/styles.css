@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient( 135deg, #FAB2FF 10%, #1904E5 100%);
+    height: 100vh;
+}
+.busimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.title {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;/* Montserrat font */
+    font-weight: 600;
+    text-shadow: black 3px 2px 2px;
+    -webkit-text-stroke-color: black;
+    color: #ffffff; /* white color */
+    margin-bottom: 0%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    padding: 15px 30px; /* increased padding for larger button size */
+    margin: 0;
+    border: none;
+    background-color: #ffffff; /* white background */
+    color: #333333; /* black text */
+    font-size: 18px; /* increased font size */
+    cursor: pointer;
+    position: relative; /* needed for positioning pseudo-element */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+button:first-child {
+    border-top-left-radius: 20px; /* curve the top-left corner */
+    border-bottom-left-radius: 20px; /* curve the bottom-left corner */
+    margin-right: 5px; /* small gap between the first and second button */
+}
+
+button:last-child {
+    border-top-right-radius: 20px; /* curve the top-right corner */
+    border-bottom-right-radius: 20px; /* curve the bottom-right corner */
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1px; /* position the separator line to the right of the button */
+    height: 80%; /* adjust the height of the separator line */
+    width: 1px; /* thickness of the separator line */
+    background-color: #999999; /* color of the separator line */
+}
+
+button:last-child::after {
+    display: none; /* hide separator line after the last button */
+}
+
+button:hover {
+    background-color: #cccccc; /* light gray background on hover */
+}
+
+
+@media screen and (max-width: 768px){
+   .title{
+        font-size: 3.5rem;
+      margin-top: 3rem;
+    }
+    .busimg{
+      width: 80%;
+    }
+
+}

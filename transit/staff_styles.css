@@ -1,0 +1,147 @@
+body{
+  background-image: linear-gradient( 135deg, #FAB2FF 10%, #1904E5 100%);
+}
+.bigbox{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+.transit{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  text-shadow: black 3px 2px 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+.imagecontainer{
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* Left half styles */
+.left-half {
+    width: 50%;
+    display: flex;
+    float: left; /* Place left half on the left */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
+/* Transit text styles */
+.transit-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800; /* Font weight */
+    font-size: 58px; /* Font size */
+    line-height: 70.7px; /* Line height */
+    letter-spacing: -5%; /* Letter spacing */
+    color: #ffffff; /* White color */
+    position: absolute; /* Position text absolutely */
+    top: 50%; /* Vertically center text */
+    left: 50%; /* Horizontally center text */
+    transform: translate(-50%, -50%); /* Center text precisely */
+}
+.phoneimage{
+  object-fit: cover;
+  width: 500px;
+  height: 400px;
+  margin-left: 150px;
+}
+#LogIn{
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: black 3px 2px 2px;
+  -webkit-text-stroke-color: black;
+}
+/* Right half styles */
+.right-half {
+    width: 50%;
+    height: 50vh;
+
+    float: right; /* Place right half on the right */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
+/* Login box styles */
+.login-box {
+    width: 80%;
+    max-width: 300px; /* Maximum width of the login box */
+    padding: 20px;
+    border-radius: 5px; /* Make corners curved */
+    background-color: none;/* White background color */
+    box-shadow: none; /* Remove shadow */
+
+}
+
+/* Label styles */
+.login-box label {
+    font-family: "Poppins", sans-serif; /* Montserrat font */
+    font-weight: 800; /* Font weight */
+    font-size: 30px; /* Font size */
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #cccccc; /* Add bottom border */
+    border-radius: 10px;
+}
+
+/* Login button styles */
+.login-box button {
+    width: 190px; /* Width */
+    height: 40px; /* Height */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(45, 45, 46); /* Blue color */
+    color: #ffffff; /* White color */
+    border: none;
+    border-radius: 20px; /* Make corners curved */
+    cursor: pointer;
+}
+#signup_button{
+  background-color: transparent;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+  .bigbox{
+    width: 100%;
+  }
+  .left-half{
+    width: 0%;
+  }
+  .right-half{
+
+    width: 100%;
+    
+  }
+  .transit{
+    font-size: 3rem;
+    margin-top: 2rem;
+   }
+   #LogIn{
+    font-size: 2rem;
+
+   }
+   .phoneimage{
+    display: none;
+   }
+
+}
